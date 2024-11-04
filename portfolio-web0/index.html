@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"> <!-- AOS CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                Faizan<span> Anjum</span>
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="links" id="nav-links">
+                <i class="fa-solid fa-circle-xmark" onclick="toggleMenu()" id="close-icon" style="display:none;"></i>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="image" data-aos="flip-left">
+            <img src="images/profile1.png" alt="Profile Picture">
+        </div>
+        <div class="content" data-aos="zoom-in-up">
+            <h1>Hey, I'm <span>Faizan Anjum</span></h1>
+            <p class="typewriter">I'm a <span id="typewriter-text"></span></p>
+            <p>I'm a passionate frontend, backend, and full-stack developer skilled in HTML, CSS, JavaScript, TypeScript, and currently learning Next.js.</p>
+            
+            <!-- Social Links -->
+            <div class="social-links">
+                <a href="#" title="Facebook" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/welcometofaizeecity/" title="Instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/faizan-anjum-a044912b8/" title="LinkedIn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" title="Twitter" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+            <div class="btn">
+                <button onclick="hireMe()">Hire me</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="content">
+            <div class="title" data-aos="zoom-in-up"><span>About Me</span></div>
+            <div class="about-details">
+                <div class="left"  data-aos="flip-right">
+                    <img src="images/profile.jpg" alt="Profile Picture">
+                </div>
+                <div class="right" data-aos="zoom-in-up">
+                    <p>I'm <span>Faizan Anjum</span>, a dedicated <span>Frontend, Backend, and Full Stack Developer</span> with a passion for crafting engaging digital experiences.</p>
+                    <div class="exp-area">
+                        <p><strong>Experience:</strong> 2 Years</p>
+                        <p><strong>Specialty:</strong> Frontend & Backend Development</p>
+                        <p><strong>Address:</strong> Karachi, Pakistan</p>
+                        <p><strong>Email:</strong> faizee956@gmail.com</p>
+                        <p><strong>Phone:</strong> +92 3299267298</p>
+                        <p><strong>Freelance:</strong> Available</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Skills Section -->
+<section class="skills" id="skills">
+    <div class="content">
+        <div class="title" data-aos="flip-right"><span>Skills</span></div>
+        <div class="skills-list">
+            <div class="skill-item"  data-aos="zoom-in">
+                <h3>HTML</h3>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 90%;"></div>
+                </div>
+            </div>
+            <div class="skill-item"  data-aos="zoom-in">
+                <h3>CSS</h3>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 80%;"></div>
+                </div>
+            </div>
+            <div class="skill-item"  data-aos="zoom-in">
+                <h3>TypeScript</h3>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 77%;"></div>
+                </div>
+            </div>
+            <div class="skill-item"  data-aos="zoom-in">
+                <h3>JavaScript</h3>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 75%;"></div>
+                </div>
+            </div>
+            <div class="skill-item"  data-aos="zoom-in">
+                <h3>Nextjs</h3>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 70%;"></div>
+                </div>
+            </div>
+            <div class="skill-item"  data-aos="zoom-in">
+                <h3>Phyton</h3>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 60%;"></div>
+                </div>
+            </div>
+            <!-- Add more skills as needed -->
+        </div>
+    </div>
+</section>
+<!-- Services section -->
+<section class="services-section" id="services">
+    <h2 data-aos="flip-right">My Services</h2>
+    <div class="services-container">
+        <div class="service-card" data-aos="zoom-in-up">
+            <div class="icon"><i class="fas fa-laptop-code"></i></div>
+            <h3>Web Development</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molitia autem quam odio, qui voluptatem eligendi?</p>
+        </div>
+        <div class="service-card" data-aos="zoom-in-up">
+            <div class="icon"><i class="fas fa-pencil-alt"></i></div>
+            <h3>Frontend Development</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molitia autem quam odio, qui voluptatem eligendi?</p>
+        </div>
+        <div class="service-card" data-aos="zoom-in-up">
+            <div class="icon"><i class="fas fa-chart-line"></i></div>
+            <h3>Backend Development</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molitia autem quam odio, qui voluptatem eligendi?</p>
+        </div>
+        <div class="service-card" data-aos="zoom-in-up">
+            <div class="icon"><i class="fas fa-icons"></i></div>
+            <h3>Full Stack Development </h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molitia autem quam odio, qui voluptatem eligendi?</p>
+        </div>
+        <div class="service-card" data-aos="zoom-in-up">
+            <div class="icon"><i class="fas fa-camera"></i></div>
+            <h3>UI/UX Design</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molitia autem quam odio, qui voluptatem eligendi?</p>
+        </div>
+        <div class="service-card" data-aos="zoom-in-up">
+            <div class="icon"><i class="fas fa-mobile-alt"></i></div>
+            <h3>Apps Development</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molitia autem quam odio, qui voluptatem eligendi?</p>
+        </div>
+    </div>
+</section>
+<!-- contact section -->
+<section class="contact-section" id="contact">
+    <h2 data-aos="zoom-in-up">Contact Me</h2>
+    <p data-aos="zoom-in-up">Have Any Project?</p>
+    <p data-aos="zoom-in-up">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+    
+    <form class="contact-form" data-aos="zoom-in-up">
+      <label for="name">Name</label>
+      <input type="text" id="name" placeholder="Your Name" />
+  
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Your Email" />
+  
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" placeholder="Your Phone Number" />
+  
+      <label for="message">Message</label>
+      <textarea id="message" placeholder="Your Message"></textarea>
+  
+      <button type="submit" class="send-btn">Send Message</button>
+    </form>
+  </section>
+ <!-- Footer Section -->
+<footer class="footer-section" data-aos="zoom-in-up">
+    <p>&copy; 2024 Faizan Anjum. All rights reserved.</p>
+    
+    <div class="social-links">
+        <a href="https://wa.me/923122177167" target="_blank" aria-label="WhatsApp">
+            <i class="fab fa-whatsapp"></i> +923122177167
+        </a>
+        <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/faizan-anjum-a044912b8/" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/your-username" target="_blank" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+        </a>
+    </div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script> <!-- AOS JavaScript -->
+    <script>
+        AOS.init(); // Initialize AOS animations
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
